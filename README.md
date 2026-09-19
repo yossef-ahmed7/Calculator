@@ -22,22 +22,6 @@ This project was created to practice JavaScript DOM manipulation, events, keyboa
 * CSS3
 * JavaScript (ES6+)
 
-## 📸 Preview
-
-![Calculator Preview](./preview.png)
-
-## 🚀 Getting Started
-
-1. Clone the repository:
-
-```bash
-git clone https://github.com/yossef-ahmed7/Calculator.git
-```
-
-2. Open the project folder.
-
-3. Open `index.html` in your browser.
-
 ## 🎯 What I Practiced
 
 Through this project, I practiced:
