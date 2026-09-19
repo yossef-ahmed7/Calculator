@@ -58,8 +58,9 @@ body {
     transition: transform 0.08s ease;
     box-shadow: 0 4px 0 #1e293b;
 }
+
 .calculator-row button:active {
-    transform:scale(0.95);
+    transform: scale(0.95);
     box-shadow: 0 1px 0 #1e293b;
 }
 
