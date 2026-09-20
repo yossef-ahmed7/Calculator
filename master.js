@@ -9,22 +9,20 @@ button.forEach((button) => {
     button.addEventListener('click', () => {
 
         if (button !== clear && button !== del && button !== equal) {
+
             let buttonText = button.textContent;
+
             if (justCalculated) {
-
-                if (!isNaN(buttonText)) {
-                    display.textContent = '';
-                }
-
+                display.textContent = '';
                 justCalculated = false;
             }
 
             if (display.textContent === '0') {
                 display.textContent = '';
-            };
+            }
 
             display.textContent += buttonText;
-        };
+        }
 
     });
 });
@@ -46,6 +44,7 @@ equal.addEventListener('click', () => {
         justCalculated = true;
     } catch (error) {
         display.textContent = 'Error';
+        justCalculated = true;
     }
 });
 
