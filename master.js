@@ -9,20 +9,23 @@ button.forEach((button) => {
     button.addEventListener('click', () => {
 
         if (button !== clear && button !== del && button !== equal) {
-
             let buttonText = button.textContent;
-
             if (justCalculated) {
-                display.textContent = '';
+
+                if (!isNaN(buttonText)) {
+                    display.textContent = '';
+                    justCalculated = false;
+                }
+
                 justCalculated = false;
             }
 
             if (display.textContent === '0') {
                 display.textContent = '';
-            }
+            };
 
             display.textContent += buttonText;
-        }
+        };
 
     });
 });
